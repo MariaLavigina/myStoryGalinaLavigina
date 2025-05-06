@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts Link for Roboto -->
 
@@ -14,9 +15,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
 </head>
-
 
 
 <body class="bg-[#21191B] "  style="font-family: 'Roboto', sans-serif;">
@@ -28,24 +27,26 @@
 <img src="images/mobile-NavBarWave.png" alt="Description of image" class="absolute top-0 left-0 w-full h-auto z-20 block sm:hidden">
 <!-- This will be shown on mobile -->
 
-
-
-
-
-
 <!-- Background wave with centered text -->
 <div class="absolute left-0 w-full h-auto z-10 top-80 md:top-96 lg:top-[36rem] xl:top-[45rem] flex justify-center items-center">
-    <img src="images/mainFirstPageWave.png" alt="Background Wave" class="w-full h-auto object-cover">
-    
+
+<!-- Desktop / Tablet Wave -->
+     <img src="images/desktop-mainFirstPageWave.png" alt="Background Wave Desktop" class="w-full h-auto object-cover hidden sm:block">
+
+<!-- Mobile Wave -->
+<img src="images/mobile-mainFirstPageWave.png" alt="Background Wave Mobile" class="w-full h-auto object-cover block sm:hidden">
+
+
     <!-- Text Container (Centered vertically and horizontally) -->
-    <div class="absolute text-center text-white" style="top: 8%; width: 60%;"> <!-- Center text with custom 'top' -->
-      <h2 class="text-2xl md:text-3xl lg:text-4xl italic" style="font-family: 'Playfair Display', serif;"> Каждый выбирает для себя</h2>
-      <p class="mt-4 text-base md:text-lg">Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто. Шиванта клостер мандерин воскалин френдусов лориманта. Дермус ваприкол стелитра фондертум арвискул темпоро. Гронталип супераст вилансо метроклин дасвентис промулгар. Ластирум кавретин соривенту трапозин кальфиренту ост. Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто.</p>
+    <div class="absolute text-center text-white w-[60%] top-[8%] sm:top-[21%]"> <!-- Center text with custom 'top' -->
+      <h2 class="text-2xl md:text-3xl lg:text-4xl italic mb-7" style="font-family: 'Playfair Display', serif;"> Каждый выбирает <span class="block text-6xl">для себя</span></h2>
+      <p class="mt-4 text-base md:text-lg" style="width: 100%;  margin-left: auto; margin-right: auto;">Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто. Шиванта клостер мандерин воскалин френдусов лориманта. Дермус ваприкол стелитра фондертум арвискул темпоро. Гронталип супераст вилансо метроклин дасвентис промулгар. Ластирум кавретин соривенту трапозин кальфиренту ост. Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто.</p>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl italic mt-7" style="font-family: 'Playfair Display', serif;">Про нашу алию</h2>
+      <p class="mt-4 text-base md:text-lg" style="width: 100%;  margin-left: auto; margin-right: auto;">Что значит нашу? 
+        Это идея Маши - три женщины : мама, Маша и я напишут об этом времени. А как же наша бабушка, ведь... А мы напишем за неё по ее письмам. У меня есть ее письма к Томочке и Эрику (они прислали их мне по моей просьбе) и письма к Игорю, которые я попросила вернуть. Томочка и я не можем их читать - ревем и все тут. 
+        Но тут деваться некуда. К тому же услышала вот такое определение человека:  “Человек - это животное, способное создавать новые тексты”. Ну что ж, вот и случай понять отношусь ли я к человекам.</p>
     </div>
 </div>
-
-
-
 
 <!-- Heading on top of HeroPhoto.jpg (only visible on larger screens) -->
 <h1 class="text-white text-5xl md:text-4xl lg:text-5xl italic absolute top-0 w-full text-right z-30 hidden sm:block 
