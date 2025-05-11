@@ -4,116 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Link for Roboto -->
-
-    <!-- Preconnects first -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
+ <body class="m-0 p-0 bg-[#21191B]" style="font-family: 'Roboto', sans-serif;">
 
 
-<body class="bg-[#21191B] "  style="font-family: 'Roboto', sans-serif;">
+<!-- ==================== NAVBAR ==================== -->
+<div class="sticky top-0 left-0 w-full z-50">
+  <!-- Navbar with gradient background -->
+  <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-l from-[#9399F0] via-[#2C192C] to-transparent z-0"></div>
 
-<!-- NavBar wave for mobile and desktop -->
-<img src="images/desktop-NavBarWave.png" alt="Description of image" class="absolute top-0 left-0 w-full h-auto z-20 hidden sm:block">
-<!-- This will be shown on desktop -->
-
-<img src="images/mobile-NavBarWave.png" alt="Description of image" class="absolute top-0 left-0 w-full h-auto z-20 block sm:hidden">
-<!-- This will be shown on mobile -->
-
-<!-- Background wave with centered text -->
-<div class="absolute left-0 w-full h-auto z-10 top-80 md:top-96 lg:top-[36rem] xl:top-[45rem] flex justify-center items-center">
-
-<!-- Desktop / Tablet Wave -->
-     <img src="images/desktop-mainFirstPageWave.png" alt="Background Wave Desktop" class="w-full h-auto object-cover hidden sm:block">
-
-<!-- Mobile Wave -->
-<img src="images/mobile-mainFirstPageWave.png" alt="Background Wave Mobile" class="w-full h-auto object-cover block sm:hidden">
-
-
-    <!-- Text Container (Centered vertically and horizontally) -->
-    <div class="absolute text-center text-white w-[60%] top-[8%] sm:top-[21%]"> <!-- Center text with custom 'top' -->
-      <h2 class="text-2xl md:text-3xl lg:text-4xl italic mb-7" style="font-family: 'Playfair Display', serif;"> Каждый выбирает <span class="block text-6xl">для себя</span></h2>
-      <p class="mt-4 text-base md:text-lg" style="width: 100%;  margin-left: auto; margin-right: auto;">Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто. Шиванта клостер мандерин воскалин френдусов лориманта. Дермус ваприкол стелитра фондертум арвискул темпоро. Гронталип супераст вилансо метроклин дасвентис промулгар. Ластирум кавретин соривенту трапозин кальфиренту ост. Фартел ускрив зомпалик венграстил дормуса калвита. Меркалив зундеров пластикен тромвис кардоплант эльфусто.</p>
-      <h2 class="text-2xl md:text-3xl lg:text-4xl italic mt-7" style="font-family: 'Playfair Display', serif;">Про нашу алию</h2>
-      <p class="mt-4 text-base md:text-lg" style="width: 100%;  margin-left: auto; margin-right: auto;">Что значит нашу? 
-        Это идея Маши - три женщины : мама, Маша и я напишут об этом времени. А как же наша бабушка, ведь... А мы напишем за неё по ее письмам. У меня есть ее письма к Томочке и Эрику (они прислали их мне по моей просьбе) и письма к Игорю, которые я попросила вернуть. Томочка и я не можем их читать - ревем и все тут. 
-        Но тут деваться некуда. К тому же услышала вот такое определение человека:  “Человек - это животное, способное создавать новые тексты”. Ну что ж, вот и случай понять отношусь ли я к человекам.</p>
+  <div class="relative flex justify-between items-center px-6 py-4 text-white z-10">
+    <div class="text-2xl font-bold">
+      <!-- You can put your logo or title here -->
     </div>
+
+    <!-- Desktop Navigation Links -->
+    <div id="navbar" class="hidden lg:flex space-x-5 text-xl md:text-lg lg:text-base font-['Roboto']">
+      <a href="#" class="hover:text-gray-400 px-6">o себе</a>
+      <span class="text-white" style="transform: rotate(35deg);">|</span>
+      <a href="#" class="hover:text-gray-400 px-6">главная страница</a>
+      <span class="text-white" style="transform: rotate(35deg);">|</span>
+      <a href="#" class="hover:text-gray-400 px-6">списки глав</a>
+      <span class="text-white" style="transform: rotate(35deg);">|</span>
+      <a href="#" class="hover:text-gray-400 px-6">свяжитесь со мной</a>
+    </div>
+
+    <!-- Hamburger Icon for Mobile (visible only on screens smaller than lg) -->
+    <div class="block lg:hidden z-40 cursor-pointer" id="hamburger">
+      <div class="w-6 h-0.5 bg-white mb-2"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </div>
+  </div>
 </div>
 
-<!-- Heading on top of HeroPhoto.jpg (only visible on larger screens) -->
-<h1 class="text-white text-5xl md:text-4xl lg:text-5xl italic absolute top-0 w-full text-right z-30 hidden sm:block 
-    right-28 mt-40 md:right-20 md:mt-36 lg:mt-40"  style="font-family: 'Playfair Display', serif;">
-    Каждый выбирает
-</h1>
-<h1 class="text-white text-[7rem] md:text-[5rem] lg:text-[7rem] font-bold italic absolute top-0 w-full text-right z-30 hidden sm:block 
-    right-10 mt-40 md:right-5 md:mt-36 lg:mt-40 " style="font-family: 'Playfair Display', serif;" >
-    для себя
-</h1>
-
-
-    <!-- Small Image (For Mobile Devices Only, Below 768px) -->
-    <img src="images/GL-HeroPhoto-Mobile.jpg" alt="Front Photo" 
-         class="absolute top-0 left-0 w-full h-auto object-cover z-0 block sm:hidden">
-
-    <!-- Large Image (For Larger Screens, Tablets and Above) -->
-    <img src="images/GL-HeroPhoto.jpg" alt="Front Photo" 
-         class="absolute top-0 left-0 w-full h-auto object-cover z-0 hidden sm:block">
-
-    <!-- Navbar -->
-    <div class="relative z-30">
-        <!-- Hamburger Icon for Mobile (visible only on screens smaller than lg) -->
-        <div class="block lg:hidden absolute top-6 right-6 z-40 cursor-pointer" id="hamburger">
-            <div class="w-6 h-0.5 bg-white mb-2"></div>
-            <div class="w-6 h-0.5 bg-white mb-2"></div>
-        </div>
-
-<!-- Navbar Links for Desktop and Larger Screens (hidden on smaller screens like iPad and phones) -->
-<div id="navbar" class="hidden lg:flex absolute top-6 right-6 z-30 space-x-5 text-white text-xl md:text-lg lg:text-base font-['Roboto']">
-    <div class="flex items-center space-x-5"> 
-        <a href="#" class="hover:text-gray-400">o себе</a>
-        <span class="text-white" style="transform: rotate(35deg);">|</span>
-        <a href="#" class="hover:text-gray-400">главная страница</a>
-        <span class="text-white" style="transform: rotate(35deg);">|</span>
-        <a href="#" class="hover:text-gray-400">списки глав</a>
-        <span class="text-white" style="transform: rotate(35deg);">|</span>
-        <a href="#" class="hover:text-gray-400">свяжитесь со мной</a>
-    </div>
+<!-- Mobile Dropdown Navbar -->
+<div class="relative z-30">
+  <div id="mobileMenu" class="hidden lg:hidden absolute top-12 right-6 w-64 bg-[#21191B] text-white p-6 space-y-6 rounded-lg transition-all duration-300 ease-in-out transform scale-y-0 origin-top">
+    <a href="#" class="block">o себе</a>
+    <a href="#" class="block">Главная Страница</a>
+    <a href="#" class="block">списки глав</a>
+    <a href="#" class="block">cвяжитесь со мной</a>
+  </div>
 </div>
 
-        <!-- Mobile Dropdown Navbar (Initially Hidden, visible on small screens) -->
-        <div id="mobileMenu" class="hidden lg:hidden absolute top-12 right-6 w-64 bg-[#21191B] text-white p-6 space-y-6 rounded-lg">
-            <a href="#" class="block">o себе</a>
-            <a href="#" class="block">Главная Страница</a>
-            <a href="#" class="block">списки глав </a>
-            <a href="#" class="block">cвяжитесь со мной</a>
-        </div>
-    </div>
 
-    <script>
-        // Toggle Mobile Navbar
-        document.getElementById('hamburger').addEventListener('click', function() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden'); // Toggle the hidden class
-        });
-    </script>
+
+  <!-- ==================== HERO SECTION WITH BACKGROUND WAVE ==================== -->
+  <div class="relative w-full left-0  h-auto z-10 top-[24rem] md:top-[32rem] lg:top-[32rem] xl:top-[32rem] flex justify-center items-center">
+        <!-- SVG  -->
+    <svg class="hidden lg:block w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 2328">
+
+        <path d="M1918 1909.24L1918 10.8354C1918 10.8354 1679.62 -90.1445 971.619 324.435C263.619 739.014 0.00034249 196.89 0.00034249 196.89L0.000866097 1733.89C0.000866097 1733.89 94.0486 1013 971.619 1607.13C1849.19 2201.26 1918 1909.24 1918 1909.24Z" fill="url(#paint0_linear_606_10)" fill-opacity="0.77"/>
+        <path d="M1918 1706.99L1918 120.058C1918 120.058 1679.62 35.6458 971.619 382.204C263.619 728.761 0.000448423 275.586 0.000448423 275.586L0.000871648 1856C0.000871648 1856 147.871 1387.27 936.202 1613.74C1724.53 1840.2 1918 1706.99 1918 1706.99Z" fill="url(#paint1_linear_606_10)"/>
+        <path d="M1918 1841.03L1918 487.48C1918 487.48 1644.41 235.293 940.476 503.153C236.544 771.012 0 23.0001 0 23.0001L0.000848002 1476.28C0.000848002 1476.28 188.096 1185.63 880.628 1568.89C1573.16 1952.16 1918 1841.03 1918 1841.03Z" fill="url(#paint2_linear_606_10)" fill-opacity="0.3"/>
+        <defs>
+        <linearGradient id="paint0_linear_606_10" x1="739.002" y1="1166" x2="108.638" y2="561.394" gradientUnits="userSpaceOnUse">
+        <stop offset="0.0384615" stop-color="#9399F0" stop-opacity="0.3"/>
+        <stop offset="1" stop-color="#563457" stop-opacity="0.3"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_606_10" x1="959.001" y1="-97.5354" x2="959.001" y2="1884.92" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9399F0"/>
+        <stop offset="1" stop-color="#563457"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_606_10" x1="1549.5" y1="338.5" x2="164.15" y2="995.072" gradientUnits="userSpaceOnUse">
+        <stop offset="0.384615" stop-color="#2C192C"/>
+        <stop offset="1" stop-color="#9399F0" stop-opacity="0.4"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        
+
+        <!-- Mobile SVG: Visible on smaller screens -->
+        <svg class="block lg:hidden w-full h-auto " width="380" height="885" viewBox="0 0 380 885"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M380 867.239L380 24.1108C380 24.1108 315 -14.8891 192.5 69.7502C69.9999 154.39 -0.00012207 115.793 -0.00012207 115.793L0 784.421C0 784.421 89.9999 755.739 189.5 838.641C289 921.542 380 867.239 380 867.239Z" fill="url(#paint0_linear_603_38)"/>
+            <path d="M380 801.239L380 61.8601C380 61.8601 356 0.0808945 185.5 76.1107C14.9999 152.14 -0.000152588 61.8601 -0.000152588 61.8601L0 860.239C0 860.239 24.4999 804.64 176.5 844.239C328.5 883.837 380 801.239 380 801.239Z" fill="url(#paint1_linear_603_38)" fill-opacity="0.77"/>
+            <path d="M380 835.412L380 11.6401C380 11.6401 327 -36.86 171.5 64.14C15.9998 165.14 -0.000305176 21.0206 -0.000305176 21.0206L-0.00012207 840.134C-0.00012207 840.134 37.4999 779.704 196.5 835.412C355.5 891.121 380 835.412 380 835.412Z" fill="url(#paint2_linear_603_38)" fill-opacity="0.4"/>
+            <defs>
+            <linearGradient id="paint0_linear_603_38" x1="190" y1="-99.8626" x2="190" y2="903.94" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9399F0"/>
+            <stop offset="1" stop-color="#563457"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_603_38" x1="384.5" y1="-90.4801" x2="-187.649" y2="32.5126" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#563457" stop-opacity="0.8"/>
+            <stop offset="1" stop-color="#9399F0" stop-opacity="0.4"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear_603_38" x1="384.5" y1="-100.681" x2="-189.987" y2="16.9882" gradientUnits="userSpaceOnUse">
+            <stop offset="0.120192" stop-color="#9399F0" stop-opacity="0.4"/>
+            <stop offset="0.75" stop-color="#6D3441" stop-opacity="0.8"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            
+            </div>
+
+        <!-- ==================== HERO BACKGROUND PHOTOS ==================== -->
+  <img src="images/GL-HeroPhoto-Mobile.jpg" alt="Hero Photo Mobile" class="absolute top-0 left-0 w-full h-auto object-cover z-0 block sm:hidden">
+  <img src="images/GL-HeroPhoto-Desktop.jpg" alt="Hero Photo Desktop" class="absolute top-0 left-0 w-full h-auto object-cover z-0 hidden sm:block">
+
+  
 
 </body>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('scale-y-0');
+
+});
+</script>
+
 </html>
-
-
-
-
-
-
-
 
 
 
